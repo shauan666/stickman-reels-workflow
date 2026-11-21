@@ -1,33 +1,134 @@
-# 火柴人劇場 · Stickman Reels Workflow
+# Stickman Reels Workflow — Make Viral Stick-Figure Reels with AI
 
-**An AI-run stick-figure Reels pipeline — still image → AI video → code overlay → publish → daily data review.**
-一個由 AI 實際營運中的火柴人短影音生產線：產圖 → 圖生影片 → 程式疊字 → 多版面發佈 → 每日數據診斷。方法、腳本、真實成績，全部公開。
+**A free, working AI workflow for faceless short-form video.** One still image → AI video generation → code-rendered text and counters → publish → daily data diagnosis. This is the exact system behind a live stick-figure channel posting A/B comparison Reels ("discipline vs laziness", "saver vs spender") to **Instagram Reels, Facebook Reels and YouTube Shorts** — built to grow traffic and move toward monetization without filming anything or showing a face.
 
 ![IG grid — Flow knife-skills reel at 1,313 views and climbing](assets/ig-grid-knife-1313.jpg)
 
-## 怎麼用：把這個專案交給你的 AI
+## Use it in 3 steps (no coding, no filming, no face)
 
-1. 下載/clone 整個專案。
-2. 把專案交給你的 AI（Muse、GPT、Claude Code 都可以），跟它說：**「先讀 AI_START_HERE.md，再讀 README，然後照工作流做。」**
-3. AI 讀完就能獨立生產：選題、做片、QA、給發佈文案。
+1. **Copy `SKILL.md` into your AI assistant** — Claude, ChatGPT, Gemini, or any AI that can read files and run code. That file is the whole operating procedure.
+2. **Give it a topic** — e.g. *"make one about waking up early vs hitting snooze for a year."* The AI follows the format rules below and produces a finished 9:16 video.
+3. **Publish it.** The free route (code-drawn scenes, `scripts/`) costs nothing. The optional AI-video route (Google Flow / Veo image-to-video) costs ~20 credits per clip and looks more alive.
 
-**免費 vs 付費，先講清楚：**
-- **完全免費（純程式，不用任何生成 AI）**：同框對照、場景片、暖色故事片、疊字、合成音樂——腳本都在 `scripts/`，有 Python + ffmpeg 就能產出可發佈的成品。
-- **需要生成點數（畫面更生動）**：關鍵幀 → Flow/Veo 圖生影片（約 20 點/支）→ 程式疊字。點數是選配，不是門檻。
+That's it. You pick topics and read results; the AI runs the pipeline.
 
-> 這是 2026 年 11 月才建立的新專案，正在每日營運中，數字與方法持續更新。
+## FAQ
 
-## 這條線在做什麼
+**How do I make a stick figure reel that actually gets views?**
+Use the A/B duel format in this repo: frame 1 shows the whole game (question + both side labels + counters at zero), time jumps non-linearly from Day 1 to Day 365, the loser freezes early, the winner accelerates to an extreme number, and the ending *shows* the payoff (summit flag, overflowing jar, applause) instead of stating it. Full rules below.
 
-每天生產 A/B 對照火柴人 Reels（同一個起點、兩種做法、一年後差多少），發佈到 Instagram 與 Facebook 粉專，由 AI 負責選題、生成、疊字、發佈與成效診斷，經營者只做方向決策。這不是概念驗證——是正在跑的帳號，數字是真的。
+**Does it cost money?**
+No. The code-only route is 100% free (Python + Pillow + ffmpeg). AI-generated footage is an optional upgrade, not a requirement.
 
-正在營運中的版面（都是公開宣傳中的連結，歡迎追蹤）：
+**Do I need to show my face or film anything?**
+No. Everything is generated or drawn. That is the point of the faceless format.
+
+**Which platforms does this work for?**
+Instagram Reels, Facebook Reels, YouTube Shorts and TikTok — any 9:16 short-form platform. Publish a *different version* per platform, staggered in time; bursting the identical file everywhere gets suppressed (we measured it: four copies, zero views).
+
+**How long does one video take?**
+About 5–10 minutes end to end once the setup exists: keyframe → image-to-video → code overlay → light-music bed → publish.
+
+**Why do some reels get zero views?**
+The usual causes we have verified on our own accounts: silent videos (platforms explicitly flag audio as a performance factor), identical files burst-posted across surfaces, aphorism text-card endings nobody watches, and posting a format the account isn't classified for. Our rule: every near-zero post gets a written diagnosis (account status / first-batch distribution / retention / cross-surface comparison), not just a view count.
+
+**Can this make money?**
+Traffic first, honestly. The monetization paths this system is built for: platform creator programs (e.g. Facebook Content Monetization — invite-based, no honest timeline exists), affiliate product links attached to posts, and funnelling attention to your own products or services. Anyone promising you a date is guessing.
+
+**What language does it work in?**
+Any. Every text element is a config value. This repo ships Traditional Chinese and English configs; swap the strings.
+
+## The format rules (from viral teardowns + our own published data)
+
+The skeleton is not invented — it is reverse-engineered frame by frame from breakout stick-figure channels of Oct–Nov 2026 (e.g. MindFrame Animation: two Shorts at 22M views within two weeks of launch; Visual Mindset: up to 10M per Short), then corrected against our own numbers:
+
+1. **Frame 1 is the whole game**: question hook + both labels + counters at 0, in one frame.
+2. **Non-linear time jumps**: Day 1 → Day 365. The loser freezes at the first jump (single digits); the winner accelerates to an extreme total (8 vs 12,480 reps; $0 vs $36,500).
+3. **One event at 50–70%**: a quitting moment, a summit, an overflowing jar — not a straight race.
+4. **The ending is shown, never written**: payoff event on screen, no aphorism card. 8 of 10 breakout videos end this way.
+5. **One closing question only**: "WHICH ONE ARE YOU?" — an identity question, not a lecture.
+6. **≤15 seconds, light-music bed, all text rendered in code** — video models garble on-screen text, so text is never generated, always overlaid.
+
+## The workflow
+
+```
+1. Pick a topic with demand evidence (a big account's recent breakout,
+   the same topic moving on several accounts, or a proven classic concept)
+2. Compose ONE keyframe still: the A/B contrast must read in 1 second
+3. Image-to-video (Google Flow / Veo 3.1 Fast, 8s, 720x1280)
+   — or a code-drawn scene on the free route; watermark-check every frame
+4. Code overlay: hook / day jumps / both counters / ending freeze + question
+   + synthesized light-music bed (no copyright risk)
+5. Publish a DIFFERENT version per surface, staggered — never burst
+6. Next-day diagnosis: views → retention (skip rate, avg watch) → follows
+   → inquiries → revenue. Near-zero posts get a cause, not just a number
+```
+
+## Real results (IG @artbronai0102, measured 2026-11-21/22)
+
+| Video | Views | Notes |
+|---|---|---|
+| Latte factor (one coffee a day → $1.45M) | 3,504 | Highest engagement rate on the account |
+| Split-screen Discipline vs Motivation | 3,332 | Avg watch 9.5s of 14s, 824 replays |
+| Why dividend investors don't sell at −20% | 1,418 | |
+| Flow knife-skills duel (AI-video route) | 1,313 ↑ | Was 26 views at 25 minutes; kept climbing |
+| Flow weeding duel | — | 13.2% skip rate, the account's lowest |
+
+![IG grid overview](assets/ig-grid-overview.jpg)
+
+## What failed (kept honest)
+
+- **Code-drawn stick figures look like slideshows** — motion must be performed by the video model; code only does the text layer.
+- **Aphorism endings** — nobody watches a conclusion they have to read. Show it.
+- **Burst-posting the identical file to four surfaces** — all four scored zero on Facebook. Different version per surface, staggered.
+- **Silent videos** — Facebook's own dashboard says Reels with audio perform better. Every video now ships with a synthesized light-music bed.
+- **Wrong format for the account's classification** — our Facebook profile was classified as a story account; explainer reels died there while the same videos were pushed to strangers on Instagram. Surface roles: IG = reach + follows; FB = stories + monetization.
+
+## Files in this repo
+
+- `SKILL.md` — **the AI entry point.** Hand this file to your AI; it contains the full operating procedure, format rules, free vs paid routes and QA gates.
+- `AGENTS.md` — pointer file for AI agents (read SKILL.md first).
+- `AI_START_HERE.md` — human-readable overview of the same workflow.
+- `scripts/render25.py` — overlay engine: config-driven compositor (hook / day-jump curve / loser freeze-or-drain / winner acceleration counters / ending freeze + question) for AI-generated footage.
+- `scripts/render16.py` — split-screen comparison engine (free route). `scripts/render17.py` — scene engine (free route). `scripts/render23.py` — warm story engine (free route).
+- `scripts/make_bed25.py` — light-music synthesizer: music-box arpeggio + soft pad, pure code, zero copyright risk.
+- `assets/` — backend and profile screenshots (the evidence).
+
+## Follow the live operation
+
+All public, all running now — follow along:
 
 - YouTube「OneLine Forward」: https://www.youtube.com/@OneLineForwardStudio
 - Instagram: [@artbronai0102](https://www.instagram.com/artbronai0102/)
-- FB 個人檔案（專業模式）「Ma Pei Wen」: https://www.facebook.com/profile.php?id=61575916052418
-- FB 粉專「火柴人劇場」: https://www.facebook.com/profile.php?id=769510329574719
-- FB 粉專「Mono Stories」: https://www.facebook.com/profile.php?id=1496718363516277
+- Facebook profile (Professional mode)「Ma Pei Wen」: https://www.facebook.com/profile.php?id=61575916052418
+- Facebook Page「火柴人劇場」: https://www.facebook.com/profile.php?id=769510329574719
+- Facebook Page「Mono Stories」: https://www.facebook.com/profile.php?id=1496718363516277
+
+## Privacy boundary
+
+What is public here is the **method and the results**. Credentials, generation-credit ledgers and the operator's personal information are not in this repo and will not be published.
+
+## License
+
+MIT
+
+---
+
+# 中文說明
+
+## 這是什麼
+
+一個由 AI 實際營運中的火柴人短影音生產線：產圖 → 圖生影片 → 程式疊字 → 多版面發佈 → 每日數據診斷。每天生產 A/B 對照火柴人 Reels（同一個起點、兩種做法、一年後差多少），發佈到 Instagram、Facebook 粉專與 YouTube Shorts，由 AI 負責選題、生成、疊字、發佈與成效診斷，經營者只做方向決策。這不是概念驗證——是正在跑的帳號，數字是真的。
+
+## 怎麼用（超簡單）
+
+1. 下載／clone 整個專案。
+2. 把 `SKILL.md` 交給你的 AI（Muse、ChatGPT、Gemini 都可以），跟它說一個題目，例如「做一支早起 vs 賴床一年的」。
+3. AI 照格式規則產出可直接發佈的成品，你發佈即可。
+
+**免費 vs 付費，先講清楚：**
+- **完全免費（純程式，不用任何生成 AI）**：同框對照、場景片、暖色故事片、疊字、合成音樂——腳本都在 `scripts/`，有 Python + ffmpeg 就能產出可發佈的成品。
+- **需要生成點數（畫面更生動）**：關鍵幀 → Flow／Veo 圖生影片（約 20 點／支）→ 程式疊字。點數是選配，不是門檻。
 
 ## 格式規則（從爆款對標拆解出來的骨架）
 
@@ -62,8 +163,6 @@
 | Flow 刀工對決（圖生影片路線） | 1,313 ↑ | 發佈 25 分鐘時只有 26，持續爬升中 |
 | Flow 除草對決 | — | 跳出率 13.2%，全帳號最低 |
 
-![IG grid overview](assets/ig-grid-overview.jpg)
-
 ## 踩過的雷（誠實區）
 
 - **純程式畫的火柴人動畫像投影片**——動作必須由生成模型演，程式只負責文字層。
@@ -72,18 +171,6 @@
 - **無聲影片**——臉書後台直接標示「使用音訊的 Reel 成效更佳」；現在每支都墊合成輕音樂（零版權風險）。
 - **臉書個人檔案被演算法歸類為故事型帳號**——解說片在 FB 推不動、同支在 IG 被推給陌生人。版面分工：IG 衝量與追蹤，FB 走故事片與盈利。
 
-## Repo 內容
-
-- `AI_START_HERE.md` — **給 AI 的說明書**：讀完就能照工作流生產，含免費/付費路線分界與 QA 標準。
-- `scripts/render25.py` — 疊字引擎：把上述格式規則做成 config 驅動的合成器（鉤子／天數跳躍曲線／輸家凍結或歸零／贏家加速計數／結尾定格提問）。
-- `scripts/render16.py` — 同框對照引擎（免費路線）；`scripts/render17.py` — 場景引擎（免費路線）；`scripts/render23.py` — 暖色故事引擎（免費路線）。
-- `scripts/make_bed25.py` — 輕音樂合成器：音樂盒琶音＋柔和 pad，純程式合成，無版權問題。
-- `assets/` — 帳號後台與主頁截圖（成績證據）。
-
 ## 隱私邊界
 
 公開的是**方法與成績**。帳號憑證、生成點數帳本、營運者個人資訊不在此 repo，也不會公開。
-
-## License
-
-MIT
