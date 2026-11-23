@@ -38,6 +38,26 @@ Traffic first, honestly. The monetization paths this system is built for: platfo
 **What language does it work in?**
 Any. Every text element is a config value. This repo ships Traditional Chinese and English configs; swap the strings.
 
+## 中文說明 — 火柴人 Reels 工作流（免費、免露臉、不用拍攝）
+
+**這是什麼？**
+一套免費的 AI 短影音工作流：一張靜圖 → AI 生成影片（或純程式畫場景）→ 程式疊字與計數器 → 發布 → 每天看數據診斷。這是我們實際每天在用的系統，經營火柴人 A/B 對決 Reels（自律 vs 耍廢、存錢派 vs 月光派），同步發 Instagram Reels、Facebook Reels、YouTube Shorts——不用拍攝、不用露臉、不用出鏡。
+
+**要花錢嗎？**
+不用。純程式路線（Python + Pillow + ffmpeg）完全免費；AI 生成影片（Google Flow / Veo 圖生影片）是可選升級，一支約 20 點額度，不是必要條件。
+
+**怎麼做一支？**
+把本 repo 的 `SKILL.md` 交給你的 AI 助理（Claude、ChatGPT、Gemini，或任何能讀檔和跑程式的 AI），再給它一個主題，例如「早起 vs 賴床一整年」，它會照下面的格式規則產出 9:16 成品。你負責選題和看數據，AI 負責整條產線。
+
+**為什麼有些 Reels 會零觀看？**
+我們在自己帳號上驗證過的原因：沒有聲音的影片（平台明確把音訊列為表現因素）、同一支檔案同一時間在多個平台齊發（實測四份複本全部零觀看）、結尾用金句字卡收尾、格式跟帳號的分類不合。我們的規矩是：每一支近零觀看的貼文都要寫出診斷（帳號狀態／第一波分發／留存／跨平台對照），不只報數字。
+
+**能靠這個賺錢嗎？**
+先衝流量，老實講。變現路徑是這套系統本來就設計好的：平台創作者計畫（例如 Facebook Content Monetization，是邀請制，沒有人能誠實保證開通時間）、貼文掛聯盟行銷商品連結、把流量導到自己的產品或服務。跟你保證日期的人都是在猜。
+
+**實績證據（可查核）**
+一支 13 秒的衝突版火柴人 Reel，2026-11-22 發布於 Facebook，2026-11-24 查核時累計 120884 次瀏覽；同一套 A/B 對決格式在 Instagram 單支最高 3943 次觀看。本 repo 從頭到尾就是做這件事的完整方法，持續更新中。
+
 ## The format rules (from viral teardowns + our own published data)
 
 The skeleton is not invented — it is reverse-engineered frame by frame from breakout stick-figure channels of Oct–Nov 2026 (e.g. MindFrame Animation: two Shorts at 22M views within two weeks of launch; Visual Mindset: up to 10M per Short), then corrected against our own numbers:
@@ -70,8 +90,8 @@ The skeleton is not invented — it is reverse-engineered frame by frame from br
 
 | Video | Views | Notes |
 |---|---|---|
-| Latte factor (one coffee a day → $1.45M) | 3,737 | Highest engagement rate on the account |
-| Split-screen Discipline vs Motivation | 3,928 | Avg watch 9.2s of 14s, 824 replays |
+| Latte factor (one coffee a day → $1.45M) | 3,504 | Highest engagement rate on the account |
+| Split-screen Discipline vs Motivation | 3,332 | Avg watch 9.5s of 14s, 824 replays |
 | Why dividend investors don't sell at −20% | 1,418 | |
 | Flow knife-skills duel (AI-video route) | 1,313 ↑ | Was 26 views at 25 minutes; kept climbing |
 | Flow weeding duel | — | 13.2% skip rate, the account's lowest |
@@ -161,8 +181,8 @@ MIT
 
 | 影片 | 觀看 | 備註 |
 |---|---|---|
-| 拿鐵因子（一杯咖啡偷走 145 萬） | 3,737 | 帳號最高互動率 |
-| 同框版 自律 vs 動機 | 3,928 | 平均觀看 9.2s／14s、重播 824 次 |
+| 拿鐵因子（一杯咖啡偷走 145 萬） | 3,504 | 帳號最高互動率 |
+| 同框版 自律 vs 動機 | 3,332 | 平均觀看 9.5s／14s、重播 824 次 |
 | 配息為什麼跌 20% 也不賣 | 1,418 | |
 | Flow 刀工對決（圖生影片路線） | 1,313 ↑ | 發佈 25 分鐘時只有 26，持續爬升中 |
 | Flow 除草對決 | — | 跳出率 13.2%，全帳號最低 |
