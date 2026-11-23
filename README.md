@@ -64,7 +64,9 @@ The skeleton is not invented — it is reverse-engineered frame by frame from br
    → inquiries → revenue. Near-zero posts get a cause, not just a number
 ```
 
-## Real results (IG @artbronai0102, measured 2026-11-21/22)
+## Real results (measured 2026-11-21 to 2026-11-23)
+
+**Update 2026-11-23:** a video on our Facebook profile passed **82000 views** within a day of posting and is still climbing toward 100000, with viewers actively debating both sides in the comments. Produced end-to-end with the workflow in this repo.
 
 | Video | Views | Notes |
 |---|---|---|
@@ -153,7 +155,9 @@ MIT
    接近零的影片必須給出原因（帳號狀態／首批分發／留存／跨版面對照），不只報數字
 ```
 
-## 真實成績（IG @artbronai0102，2026-11-21～22 實測）
+## 真實成績（2026-11-21～23 實測）
+
+**2026-11-23 更新：** 臉書個人檔案的一支影片，發佈不到一天突破 **82000 觀看**，還在往 100000 爬，留言區兩派觀眾吵成一團。從選題到發佈，用的就是這個 repo 的完整流程。
 
 | 影片 | 觀看 | 備註 |
 |---|---|---|
