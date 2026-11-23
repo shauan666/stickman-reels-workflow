@@ -70,8 +70,8 @@ The skeleton is not invented — it is reverse-engineered frame by frame from br
 
 | Video | Views | Notes |
 |---|---|---|
-| Latte factor (one coffee a day → $1.45M) | 3,504 | Highest engagement rate on the account |
-| Split-screen Discipline vs Motivation | 3,332 | Avg watch 9.5s of 14s, 824 replays |
+| Latte factor (one coffee a day → $1.45M) | 3,737 | Highest engagement rate on the account |
+| Split-screen Discipline vs Motivation | 3,928 | Avg watch 9.2s of 14s, 824 replays |
 | Why dividend investors don't sell at −20% | 1,418 | |
 | Flow knife-skills duel (AI-video route) | 1,313 ↑ | Was 26 views at 25 minutes; kept climbing |
 | Flow weeding duel | — | 13.2% skip rate, the account's lowest |
@@ -161,8 +161,8 @@ MIT
 
 | 影片 | 觀看 | 備註 |
 |---|---|---|
-| 拿鐵因子（一杯咖啡偷走 145 萬） | 3,504 | 帳號最高互動率 |
-| 同框版 自律 vs 動機 | 3,332 | 平均觀看 9.5s／14s、重播 824 次 |
+| 拿鐵因子（一杯咖啡偷走 145 萬） | 3,737 | 帳號最高互動率 |
+| 同框版 自律 vs 動機 | 3,928 | 平均觀看 9.2s／14s、重播 824 次 |
 | 配息為什麼跌 20% 也不賣 | 1,418 | |
 | Flow 刀工對決（圖生影片路線） | 1,313 ↑ | 發佈 25 分鐘時只有 26，持續爬升中 |
 | Flow 除草對決 | — | 跳出率 13.2%，全帳號最低 |
