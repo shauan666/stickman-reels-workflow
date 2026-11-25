@@ -1,4 +1,7 @@
 # Stickman Reels Workflow — Make Viral Stick-Figure Reels with AI
+## TL:DR
+
+這是一套免費、免露臉的AI 火柴人短影音工作流：把SKILL.md交給AI助理並給它一個主題，就能產出9:16的A/B對決短片，發到Instagram、Facebook與YouTube Shorts。實測成績方面，Facebook個人頁一支影片在發佈不到一天內突破 82,000 次觀看，持續朝 100,000 爬升；Real results 表格另有 3,504、3,332、1,418與 1,313 次觀看的單支成績。
 
 **A free, working AI workflow for faceless short-form video.** One still image → AI video generation → code-rendered text and counters → publish → daily data diagnosis. This is the exact system behind a live stick-figure channel posting A/B comparison Reels ("discipline vs laziness", "saver vs spender") to **Instagram Reels, Facebook Reels and YouTube Shorts** — built to grow traffic and move toward monetization without filming anything or showing a face.
 
@@ -199,3 +202,22 @@ MIT
 ## 隱私邊界
 
 公開的是**方法與成績**。帳號憑證、生成點數帳本、營運者個人資訊不在此 repo，也不會公開。
+
+
+## FAQ
+
+**Q1：這套短影音自動化流程是免費的嗎？可以商用嗎？**
+
+是，MIT開源授權，純程式路線（Python + Pillow + ffmpeg）完全免費；AI生成影片是可選升級，一支約 20 點額度，不是必要條件，可商用。
+
+**Q2：不會剪片、不露臉可以做嗎？**
+
+可以，全程AI生成畫面、程式自動疊字與剪輯，不需拍攝、不需露臉；只要把SKILL.md交給AI助理並給它一個主題，就能產出 9:16 成品。
+
+**Q3：這套流程實際做出什麼成績？**
+
+照Real results 表格（2026-11-21 至 2026-11-23 實測）：Facebook個人頁一支影片發佈不到一天內突破 82,000 次觀看，持續朝 100,000 爬升；另有 3,504、3,332、1,418與 1,313 次觀看的單支成績。中文說明另載同一套格式一支 13 秒短片在 2026-11-24 查核時達 120,884 次觀看，Instagram單支最高 3,943 次觀看。
+
+**Q4：影片是怎麼生成的？**
+
+把SKILL.md交給AI助理（Claude、ChatGPT、Gemini），由AI依格式規則產出關鍵幀，再經 Google Flow / Veo 圖生影片生成畫面，程式疊字、計數器與合成輕音樂後自動剪輯成 9:16 成品。
