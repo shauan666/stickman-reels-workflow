@@ -59,7 +59,7 @@ Any. Every text element is a config value. This repo ships Traditional Chinese a
 先衝流量，老實講。變現路徑是這套系統本來就設計好的：平台創作者計畫（例如 Facebook Content Monetization，是邀請制，沒有人能誠實保證開通時間）、貼文掛聯盟行銷商品連結、把流量導到自己的產品或服務。跟你保證日期的人都是在猜。
 
 **實績證據（可查核）**
-一支 13 秒的衝突版火柴人 Reel，2026-11-22 發布於 Facebook，2026-11-24 查核時累計 120884 次瀏覽；同一套 A/B 對決格式在 Instagram 單支最高 3943 次觀看。本 repo 從頭到尾就是做這件事的完整方法，持續更新中。
+一支 13 秒的衝突版火柴人 Reel，2026-11-22 發布於 Facebook，2026-11-26 查核時累計 123553 次瀏覽；同一套 A/B 對決格式在 Instagram 單支最高 4044 次觀看。本 repo 從頭到尾就是做這件事的完整方法，持續更新中。
 
 ## The format rules (from viral teardowns + our own published data)
 
@@ -87,17 +87,20 @@ The skeleton is not invented — it is reverse-engineered frame by frame from br
    → inquiries → revenue. Near-zero posts get a cause, not just a number
 ```
 
-## Real results (measured 2026-11-21 to 2026-11-23)
+## Real results (measured 2026-11-21 to 2026-11-26)
 
 **Update 2026-11-23:** a video on our Facebook profile passed **82000 views** within a day of posting and is still climbing toward 100000, with viewers actively debating both sides in the comments. Produced end-to-end with the workflow in this repo.
 
+**Update 2026-11-26:** the same Facebook video reached **123,553 views** — past 100,000, but daily growth has slowed sharply (+150/day, down from +11,712 two days earlier). The health topic pack's first video (sitting too long vs standing up hourly) is now the fastest climber on Instagram at 1,190 views, +362 in a day.
+
 | Video | Views | Notes |
 |---|---|---|
-| Latte factor (one coffee a day → $1.45M) | 3,504 | Highest engagement rate on the account |
-| Split-screen Discipline vs Motivation | 3,332 | Avg watch 9.5s of 14s, 824 replays |
+| Latte factor (one coffee a day → $1.45M) | 4,044 | Highest engagement rate on the account |
+| Split-screen Discipline vs Motivation | 3,945 | Avg watch 9.2s of 14s, 824 replays |
+| Sitting too long vs standing up hourly (health pack B3) | 1,190 | +362 in one day — the health topic pack's first video is the fastest climber today |
 | Why dividend investors don't sell at −20% | 1,418 | |
 | Flow knife-skills duel (AI-video route) | 1,313 ↑ | Was 26 views at 25 minutes; kept climbing |
-| Flow weeding duel | — | 13.2% skip rate, the account's lowest |
+| Flow weeding duel | 138 | 32.8% skip rate, the account's lowest |
 
 ![IG grid overview](assets/ig-grid-overview.jpg)
 
@@ -179,17 +182,20 @@ MIT
    接近零的影片必須給出原因（帳號狀態／首批分發／留存／跨版面對照），不只報數字
 ```
 
-## 真實成績（2026-11-21～23 實測）
+## 真實成績（2026-11-21～26 實測）
 
 **2026-11-23 更新：** 臉書個人檔案的一支影片，發佈不到一天突破 **82000 觀看**，還在往 100000 爬，留言區兩派觀眾吵成一團。從選題到發佈，用的就是這個 repo 的完整流程。
 
+**2026-11-26 更新：** 同支臉書影片累計 **123,553 觀看**，已破 10 萬，但單日漲幅明顯收斂（＋150／天，兩天前是 ＋11,712）。健康主題包首支（久坐 vs 每小時起身）在 IG 當日漲最快，1,190 觀看、單日 ＋362。
+
 | 影片 | 觀看 | 備註 |
 |---|---|---|
-| 拿鐵因子（一杯咖啡偷走 145 萬） | 3,504 | 帳號最高互動率 |
-| 同框版 自律 vs 動機 | 3,332 | 平均觀看 9.5s／14s、重播 824 次 |
+| 拿鐵因子（一杯咖啡偷走 145 萬） | 4,044 | 帳號最高互動率 |
+| 同框版 自律 vs 動機 | 3,945 | 平均觀看 9.2s／14s、重播 824 次 |
+| 久坐 vs 每小時起身（健康包 B3） | 1,190 | 單日 ＋362——健康主題包首支影片當日漲最快 |
 | 配息為什麼跌 20% 也不賣 | 1,418 | |
 | Flow 刀工對決（圖生影片路線） | 1,313 ↑ | 發佈 25 分鐘時只有 26，持續爬升中 |
-| Flow 除草對決 | — | 跳出率 13.2%，全帳號最低 |
+| Flow 除草對決 | 138 | 跳出率 32.8%，全帳號最低 |
 
 ## 踩過的雷（誠實區）
 
