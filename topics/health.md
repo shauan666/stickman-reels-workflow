@@ -27,7 +27,7 @@ never written as medical advice.
   down 30 minutes before bed", "stand up for 2 minutes every hour". One
   identity question in the caption: which side are you?
 
-## The first three topics
+## The topics
 
 ### H1 — Lying down after a meal vs a 10-minute walk （飯後躺下 vs 飯後散步）
 
@@ -63,6 +63,15 @@ never written as medical advice.
 - Caption angle: how many hours a day do you sit? Highest number gets a
   stand-up reminder.
 
+  ### H4 — Drinking water through the day vs forgetting it （下午 3 點喝水 vs 沒喝水）
+- Hook: 下午 3 點，你是清醒的，還是頭昏的？
+    ("3pm — are you clear-headed, or foggy?")
+- Left (forgot water): head foggy by 3pm, the figure slumps at the desk, water bottle untouched — 0 sips all day.
+- Right (drank water): same 3pm, same desk — the figure is clear-headed, water bottle half empty, steady sips through the day.
+- Closing line: 下午 3 點頭昏？先喝一杯水。
+- Caption angle: what time of day does your head go foggy? 3pm is ours.
+- Measured (2026-11-27, IG): 1,484 views on day one — about 12× the earlier version of the same topic that opened with an abstract metric ("skin hydration 42% → 93%", 123 views in two days). Concrete time + body feeling beats abstract number; see Status.
+
 ## Production notes
 
 - Route B only: one keyframe still per topic → Flow / Veo 3.1 Fast
@@ -74,10 +83,8 @@ never written as medical advice.
 - No medical claims: the videos show a *metaphor* of a habit contrast. No
   diagnosis, no treatment, no numbers presented as medical fact.
 
-## Status (honest, 2026-11-24)
+## Status (honest, 2026-11-27)
 
-Keyframes and AI footage for H1–H3 are generated and QA-passed; final
-post-production (overlay + music bed) and the first releases are in progress.
-Results will be added to the README results table once the first batch has a
-week of data — views, skip rate, average watch and follows, same as the duel
-line.
+H1–H3 published on IG and YouTube 2026-11-26. First real numbers (IG, 2026-11-27): H3 久坐 leads at 1,192 views, H1 飯後散步 116, H2 睡前手機 130 — likes and follows still near zero, so the format is still proving itself. H4 喝水 published on IG 2026-11-27: 1,484 views on day one.
+
+Hook lesson, measured 2026-11-27: open with a concrete time + a body feeling, not an abstract number. H4's "3pm, clear-headed vs foggy" (1,484 views, day one) beat the same topic's earlier "skin hydration 42% → 93%" version (123 views, two days) by about 12×. Health hooks now follow this rule; a question-form opening (field data: question titles draw ~1.5× the daily growth of statements) is being tested on the next health video.
